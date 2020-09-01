@@ -198,41 +198,41 @@ public class ExpenseProcesActivity extends AppCompatActivity {
     private void initSpinner(){
         if(type == 0){
             //类别
-            bigCategoryList = new String[] { "职业收入", "其他收入" };
-            defaultSubCategory_info = new String[] { "兼职收入", "投资收入" ,"奖金收入","加班收入","利息收入","工资收入" };
+            bigCategoryList = new String[] { "Occupational income", "Other income" };
+            defaultSubCategory_info = new String[] { "Part-time income", "Investment income" ,"Bonus income", "Overtime income", "Interest income", "Wage income" };
             //子类别
             subCategory_info = new String[][] {
-                    { "兼职收入", "投资收入" ,"奖金收入","加班收入","利息收入","工资收入" },
-                    { "经营所得", "意外来钱" ,"中奖收入","礼金收入" }};
+                    {"Part-time income", "Investment income", "Bonus income", "Overtime income", "Interest income", "Wage income"},
+                    {"Operating income", "Unexpected money" ,"Winning income","Gift income" }};
             //账户
-            accountList = new String[] { "现金账户", "金融账户","虚拟账户","负债账户","债权账户" };
+            accountList = new String[] {"Cash Account", "Financial Account", "Virtual Account", "Liability Account", "Debt Account" };
             //商家
-            shopList = new String[] { "银行", "公交","饭堂","商场","超市","其他" };
+            shopList = new String[] {"Bank", "Bus", "Canteen", "Mall", "Supermarket", "Other" };
             //备注
-            noteList = new String[] { "腐败", "旅游","装修","公司报销","出差","其他" };
+            noteList = new String[] {"Corruption", "Travel", "Decoration", "Company Reimbursement", "Business Trip", "Other" };
         }else{
-            bigCategoryList = new String[] { "衣服饰品", "食品酒水","居家物业","行车交通","交流通讯","休闲娱乐","学习进修"
-                    ,"人情往来","医疗保健","金融保险","其他杂项" };
-            defaultSubCategory_info = new String[] { "衣服裤子", "鞋帽包包" ,"化妆饰品" };
+            bigCategoryList = new String[] {"Clothes & Accessories", "Food and Drink", "Home Property", "Traffic", "Communications", "Leisure and Entertainment", "Learning and Training"
+                    ,"Relationships","Medical Care","Financial Insurance","Other Miscellaneous" };
+            defaultSubCategory_info = new String[] {"Clothes and pants", "Shoes, hats and bags" ,"Makeup accessories" };
             //子类别
             subCategory_info = new String[][] {
-                    { "衣服裤子", "鞋帽包包" ,"化妆饰品" },
-                    { "早午晚餐", "水果零食" ,"烟酒茶" },
-                    { "房租", "物业管理" ,"维修保养", "水电煤气" ,"日常用品" },
-                    { "公共交通", "打车租车" ,"私家车费用" },
-                    { "手机费", "上网费" ,"座机费" ,"邮寄费" },
-                    { "休闲玩乐", "旅游度假" ,"宠物宝贝", "腐败聚会" ,"运动健身" },
-                    { "书报杂志", "数码装备" ,"培训进修" },
-                    { "送礼请客", "慈善捐助" ,"还人钱物", "孝敬家长" },
-                    { "治疗费", "美容费" ,"保健费" ,"药品费" },
-                    { "赔偿罚款", "利息支出" ,"消费税收", "按揭还款" ,"投资亏损", "银行手续" },
-                    { "烂账损失", "意外丢失" ,"其他支出" }};
+                    {"Clothes and pants", "Shoes, hats and bags" ,"Makeup accessories" },
+                    {"Breakfast, lunch and dinner", "Fruit Snacks", "Tobacco, Wine and Tea" },
+                    {"Rent", "Property Management" ,"Maintenance", "Water, Electricity and Gas" ,"Daily Necessities" },
+                    {"Public Transportation", "Taxi and Rent a Car" ,"Private Car Fee" },
+                    {"Mobile phone fee", "Internet fee" ,"landline fee" ,"posting fee" },
+                    {"Leisure and Fun", "Travel and Vacation", "Pet Babies", "Corrupt Party", "Sports and Fitness" },
+                    {"Books, Newspapers and Magazines", "Digital Equipment", "Training and Training" },
+                    {"Gifts and treats", "Charitable donations", "Return money and goods", "Respect parents" },
+                    {"Treatment fee", "Beauty fee" ,"Health care fee" ,"Drug fee" },
+                    {"Compensation Penalty", "Interest Expenditure", "Consumption Tax", "Mortgage Repayment", "Investment Loss", "Bank Procedure" },
+                    {"Loss from bad debts", "Unexpected losses" ,"Other expenses" }};
             //账户
-            accountList = new String[] { "银行卡", "公交卡","饭卡","支付宝","财付通","现金","其他" };
+            accountList = new String[] {"Bank Card", "Bus Card", "Meal Card", "Alipay", "TenPay", "Cash", "Other" };
             //商家
-            shopList = new String[] { "银行", "公交","饭堂","商场","超市","其他" };
+            shopList = new String[] {"Bank", "Bus", "Canteen", "Mall", "Supermarket", "Other" };
             //备注
-            noteList = new String[] { "腐败", "旅游","装修","公司报销","出差","其他" };
+            noteList = new String[] {"Corrupt", "tourism", "decoration", "company reimbursement", "business trip", "other" };
         }
 
         /**
