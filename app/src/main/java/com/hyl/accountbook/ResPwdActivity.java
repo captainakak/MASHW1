@@ -53,11 +53,11 @@ public class ResPwdActivity extends AppCompatActivity {
      */
     private void confirmInfo() {
         if(pubFun.isEmpty(editPhone.getText().toString()) || pubFun.isEmpty(editPwd.getText().toString()) || pubFun.isEmpty(editResPwd.getText().toString())){
-            Toast.makeText(this, "手机号或密码不能为空！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "The phone number or password cannot be empty!", Toast.LENGTH_SHORT).show();
             return;
         }
         if(!editPwd.getText().toString().equals(editResPwd.getText().toString())){
-            Toast.makeText(this, "输入密码不正确！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Invalid password", Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -72,21 +72,21 @@ public class ResPwdActivity extends AppCompatActivity {
             long rowid = db.update("user_tb", cv, "userID=?",args);
             c.close();
             db.close();
-            Toast.makeText(this, "密码重置成功！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Successfully reset password!", Toast.LENGTH_SHORT).show();
             this.finish();
         }
         else{
             new AlertDialog.Builder(this)
-                    .setTitle("提示")
-                    .setMessage("该用户不存在，请到注册界面进行注册！")
-                    .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    .setTitle("Tip")
+                    .setMessage("The user does not exist, please go to the registration interface to register!")
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int whichButton) {
                             setResult(RESULT_OK);
                             Intent intent=new Intent(ResPwdActivity.this,RegistActivity.class);
                             ResPwdActivity.this.startActivity(intent);
                         }
                     })
-                    .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    .setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int whichButton) {
                             return;
                         }

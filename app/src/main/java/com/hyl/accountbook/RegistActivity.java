@@ -44,12 +44,12 @@ public class RegistActivity extends AppCompatActivity {
         boolean isTrue = true;
         if(pubFun.isPhoneNumberValid(editPhone.getText().toString()) == false){
             isTrue = false;
-            Toast.makeText(this, "手机号格式不正确！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Invalid Phone number!", Toast.LENGTH_SHORT).show();
             return;
         }
         if(pubFun.isEmpty(editPwd.getText().toString())){
             isTrue = false;
-            Toast.makeText(this, "密码不能为空！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please enter password!", Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -59,7 +59,7 @@ public class RegistActivity extends AppCompatActivity {
             SQLiteDatabase db = helper.getWritableDatabase();
             Cursor c = db.query("user_tb",null,"userID=?",new String[]{editPhone.getText().toString()},null,null,null);
             if(c!=null && c.getCount() >= 1){
-                Toast.makeText(this, "该用户已存在", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "The user already exists!", Toast.LENGTH_SHORT).show();
                 c.close();
             }
             else{
@@ -69,7 +69,7 @@ public class RegistActivity extends AppCompatActivity {
                 values.put("pwd",editPwd.getText().toString());
                 long rowid = db.insert("user_tb",null,values);
 
-                Toast.makeText(this, "注册成功", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Registration Success", Toast.LENGTH_SHORT).show();
                 this.finish();
             }
             db.close();

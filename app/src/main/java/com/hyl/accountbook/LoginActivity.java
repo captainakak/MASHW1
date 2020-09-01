@@ -45,7 +45,8 @@ public class LoginActivity extends AppCompatActivity {
      */
     public void OnMyLoginClick(View v){
         if(pubFun.isEmpty(editPhone.getText().toString()) || pubFun.isEmpty(editPwd.getText().toString())){
-            Toast.makeText(this, "手机号或密码不能为空！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Phone number or the password could not be empty!" +
+                    "Please put valid Phone number or password!", Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -72,7 +73,7 @@ public class LoginActivity extends AppCompatActivity {
             this.finish();
         }
         else{
-            Toast.makeText(this, "手机号或密码输入错误！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Incorrect Phone number or password, please check again!", Toast.LENGTH_SHORT).show();
         }
     }
 
