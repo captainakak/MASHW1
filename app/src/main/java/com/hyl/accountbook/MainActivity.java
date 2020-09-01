@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
     private CircleMenuLayout mCircleMenuLayout;
 
-    private String[] mItemTexts = new String[] { "登录&注册", "关于我们", "心愿墙",
-            "特色设置", "收入&支出", "统计" };
+    private String[] mItemTexts = new String[] { "Login & Register", "About US", "Wish List",
+            "Featured settings", "Income & Expenses", "Count" };
     private int[] mItemImgs = new int[] { R.mipmap.home_mbank_1_normal,
             R.mipmap.home_mbank_2_normal, R.mipmap.home_mbank_3_normal,
             R.mipmap.home_mbank_4_normal, R.mipmap.home_mbank_5_normal,
@@ -42,17 +42,17 @@ public class MainActivity extends AppCompatActivity {
 
         mCircleMenuLayout.setOnMenuItemClickListener(new OnMenuItemClickListener() {
             public void itemClick(View view, int pos) {
-                if (mItemTexts[pos] == "特色设置") {
+                if (mItemTexts[pos] == "Featured settings") {
                     openSettingWind(view);
-                } else if (mItemTexts[pos] == "收入&支出") {
+                } else if (mItemTexts[pos] == "Income & Expenses") {
                     openSpendingWind(view);
-                } else if (mItemTexts[pos] == "登录&注册") {
+                } else if (mItemTexts[pos] == "Login & Register") {
                     openLoginWind(view);
-                } else if (mItemTexts[pos] == "统计") {
+                } else if (mItemTexts[pos] == "Count") {
                     openCountWind(view);
-                } else if (mItemTexts[pos] == "关于我们") {
+                } else if (mItemTexts[pos] == "About US") {
                     openAboutUsAddWind(view);
-                } else if (mItemTexts[pos] == "心愿墙") {
+                } else if (mItemTexts[pos] == "Wish List") {
                     openWishWind(view);
                 }
                 ;
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             if ((System.currentTimeMillis() - mExitTime) > 2000) {
                 Object mHelperUtils;
-                Toast.makeText(this, "再按一次退出金金记较", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Press again to exit the app", Toast.LENGTH_SHORT).show();
                 //System.currentTimeMillis()系统当前时间
                 mExitTime = System.currentTimeMillis();
             } else {

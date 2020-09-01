@@ -44,9 +44,9 @@ public class CountActivity extends AppCompatActivity implements View.OnClickList
 
     private AlertDialog alertDialog_AddRecord;//点击记一笔按钮时弹出提示框
 
-    String[] titles = new String[]{"Detail", "类别报表"};
+    String[] titles = new String[]{"Detail", "Category Report"};
     private static final String[] yearList = {pubFun.getTime("Y") + "年"};
-    private static final String[] monthList = { "January", "02月", "03月", "04月", "05月", "06月", "07月", "08月", "09月", "10月", "11月", "12月" };
+    private static final String[] monthList = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);

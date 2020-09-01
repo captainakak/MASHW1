@@ -96,20 +96,20 @@ public class OneFragment extends Fragment {
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("setting", Activity.MODE_PRIVATE);
         String userID =sharedPreferences.getString("userID", "");
 
-        Log.i("info", "此次登录的用户是" + userID);
+        Log.i("info", "This time's login user is: " + userID);
 
         if(userID.isEmpty()){
             new AlertDialog.Builder(getActivity())
-                    .setTitle("提示")
-                    .setMessage("您还未登录，请点击确定按钮进行登录！")
-                    .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    .setTitle("Tip")
+                    .setMessage("You are not logged in, please click the OK button to log in！")
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int whichButton) {
                             getActivity().setResult(-1);
                             Intent intent=new Intent(getActivity(),LoginActivity.class);
                             getActivity().startActivity(intent);
                         }
                     })
-                    .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    .setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int whichButton) {
                             return;
                         }
