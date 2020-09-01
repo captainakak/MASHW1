@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e7aad1e5-6edf-48f7-a82a-eccf32f7e4e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hyl/accountbook/SpendingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hyl/accountbook/SpendingActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598993611094</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="change more sentences">
+      <created>1598994039957</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598994039957</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -171,7 +179,8 @@
     <MESSAGE value="some character" />
     <MESSAGE value="more character" />
     <MESSAGE value="change app name" />
-    <option name="LAST_COMMIT_MESSAGE" value="change app name" />
+    <MESSAGE value="change more sentences" />
+    <option name="LAST_COMMIT_MESSAGE" value="change more sentences" />
   </component>
   <component name="WindowStateProjectService">
     <state x="824" y="243" key="#app" timestamp="1598993048841">
@@ -182,10 +191,10 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="664" y="523" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1598937044771" />
-    <state x="692" y="192" key="CommitChangelistDialog2" timestamp="1598994029612">
+    <state x="692" y="192" key="CommitChangelistDialog2" timestamp="1598994039356">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="692" y="192" key="CommitChangelistDialog2/0.0.2194.1194@0.0.2194.1194" timestamp="1598994029612" />
+    <state x="692" y="192" key="CommitChangelistDialog2/0.0.2194.1194@0.0.2194.1194" timestamp="1598994039356" />
     <state x="722" y="169" key="FileChooserDialogImpl" timestamp="1598936631822">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
@@ -200,10 +209,10 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1598935136177" />
     <state x="243" y="0" key="SettingsEditor/0.0.2194.1194@0.0.2194.1194" timestamp="1598936512461" />
-    <state x="690" y="330" key="Vcs.Push.Dialog.v2" timestamp="1598993647864">
+    <state x="690" y="330" key="Vcs.Push.Dialog.v2" timestamp="1598994067881">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="690" y="330" key="Vcs.Push.Dialog.v2/0.0.2194.1194@0.0.2194.1194" timestamp="1598993647864" />
+    <state x="690" y="330" key="Vcs.Push.Dialog.v2/0.0.2194.1194@0.0.2194.1194" timestamp="1598994067881" />
     <state x="93" y="93" width="2008" height="1008" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1598935993135">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
@@ -212,10 +221,10 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="906" y="514" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2194.1194@0.0.2194.1194" timestamp="1598993087910" />
-    <state x="792" y="195" width="610" height="804" key="find.popup" timestamp="1598993400180">
+    <state x="792" y="195" width="610" height="804" key="find.popup" timestamp="1598994249558">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
-    <state x="792" y="195" width="610" height="804" key="find.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1598993400180" />
+    <state x="792" y="195" width="610" height="804" key="find.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1598994249558" />
     <state x="760" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1598937963805">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
