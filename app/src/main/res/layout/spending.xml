@@ -23,30 +23,33 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:id="@+id/tv_year"
-            android:layout_width="wrap_content"
+            android:layout_width="59dp"
             android:layout_height="fill_parent"
             android:layout_weight="3"
-            android:text="1999年"
+            android:text="1999 Year"
             android:textColor="@android:color/black"
-            android:textSize="18dp"/>
+            android:textSize="18dp" />
+
         <TextView
             android:id="@+id/tv_income"
-            android:layout_width="wrap_content"
+            android:layout_width="59dp"
             android:layout_height="fill_parent"
             android:layout_weight="3"
-            android:text="收入(元)"
+            android:text="Income ($)"
             android:textColor="@android:color/black"
-            android:textSize="18dp"/>
+            android:textSize="18dp" />
+
         <TextView
             android:id="@+id/tv_outlay"
-            android:layout_width="wrap_content"
+            android:layout_width="61dp"
             android:layout_height="fill_parent"
             android:layout_weight="3"
-            android:text="支出(元)"
+            android:text="Expenses ($)"
             android:textColor="@android:color/black"
-            android:textSize="18dp"/>
+            android:textSize="18dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -127,7 +130,7 @@
         android:layout_width="fill_parent"
         android:background="@drawable/cycleanytext_shape"
         android:onClick="OnAddRecordClick"
-        android:text="+ 记一笔"
+        android:text="+ Add a new bill"
         android:textColor="@android:color/white"
         android:textSize="20dp"/>
 
