@@ -448,9 +448,9 @@ public class ExpenseProcesActivity extends AppCompatActivity {
             values.put("makeDate",pubFun.format(calendar.getTime()));
 
             // Need to be updated later, calculate the current balance
-            tv_income_money = (TextView) findViewById(R.id.tv_income_money);
-            tv_outlay_money = (TextView) findViewById(R.id.tv_outlay_money);
-            tv_income_money.setText(DecimalFormat.getCurrencyInstance().format(Double.parseDouble(value)));
+//            tv_income_money = (TextView) findViewById(R.id.tv_income_money);
+//            tv_outlay_money = (TextView) findViewById(R.id.tv_outlay_money);
+//            tv_income_money.setText(DecimalFormat.getCurrencyInstance().format(Double.parseDouble(value)));
 
             long rowid = db.insert("basicCode_tb",null,values);
 
