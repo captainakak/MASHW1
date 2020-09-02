@@ -2,12 +2,14 @@ package com.hyl.accountbook;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+//import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
+
+import androidx.fragment.app.Fragment;
 
 import org.achartengine.ChartFactory;
 import org.achartengine.GraphicalView;

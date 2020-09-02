@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
 
+apply plugin: 'com.google.gms.google-services'
+
+
 android {
     compileSdkVersion 29
     buildToolsVersion '29.0.3'
@@ -29,8 +32,9 @@ dependencies {
     testCompile 'junit:junit:4.12'
     /*compile 'com.android.support:appcompat-v7:23.2.0'
     compile 'com.android.support:design:23.2.0'*/
-    compile 'com.android.support:appcompat-v7:+'
-    compile 'com.android.support:design:+'
+
+    implementation 'com.android.support:appcompat-v7:29.0.0'
+    implementation 'com.android.support:design:+'
     compile files('libs/achartengine-1.0.0.jar')
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -44,4 +48,10 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
     implementation 'com.ajts.androidmads.fontutils:fontutils:1.0.2'
+
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+//    implementation 'androidx.appcompat:appcompat:1.0.0'
+
+
 }
