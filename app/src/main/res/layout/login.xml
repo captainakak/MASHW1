@@ -18,11 +18,9 @@
         style="@style/textstyle"
         android:layout_width="fill_parent"
         android:background="@drawable/rounded_edittext_states"
-        android:hint="Phone Number"
+        android:hint="Email"
         android:lines="1"
-        android:singleLine="true"
-        android:inputType="number"
-        android:maxLength="11"/>
+        android:singleLine="true" />
     <!-- input pwd -->
     <EditText
         android:id="@+id/editPwd"
