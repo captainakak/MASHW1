@@ -1,5 +1,11 @@
 package com.hyl.accountbook;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.hyl.util.pubFun;
 import com.hyl.dao.DBOpenHelper;
 
@@ -9,12 +15,15 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+//import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * @programName: LoginActivity.java
@@ -25,56 +34,68 @@ import android.widget.Toast;
  * xx.   yyyy/mm/dd   ver    author    comments
  * 01.   2018/09/19   1.00   AnneHan   New Create
  */
+
 public class LoginActivity extends AppCompatActivity {
 
     private EditText editPhone;
     private EditText editPwd;
     private Button btnLogin;
+    private FirebaseAuth mAuth;
 
     protected void onCreate(Bundle savedInstanceState){
+        FirebaseApp.initializeApp(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
         editPhone = (EditText) findViewById(R.id.editPhone);
         editPwd = (EditText) findViewById(R.id.editPwd);
         btnLogin = (Button) findViewById(R.id.btnLogin);
+
+        // ...
+        // Initialize Firebase Auth
+        mAuth = FirebaseAuth.getInstance();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
     }
 
     /**
      * login event
      * @param v
      */
-    public void OnMyLoginClick(View v){
-        if(pubFun.isEmpty(editPhone.getText().toString()) || pubFun.isEmpty(editPwd.getText().toString())){
+    public void OnMyLoginClick(View v) {
+        if (pubFun.isEmpty(editPhone.getText().toString()) || pubFun.isEmpty(editPwd.getText().toString())) {
             Toast.makeText(this, "手机号或密码不能为空！", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        //call DBOpenHelper
-        DBOpenHelper helper = new DBOpenHelper(this,"qianbao.db",null,1);
-        SQLiteDatabase db = helper.getWritableDatabase();
-        Cursor c = db.query("user_tb",null,"userID=? and pwd=?",new String[]{editPhone.getText().toString(),editPwd.getText().toString()},null,null,null);
-        if(c!=null && c.getCount() >= 1){
-            String[] cols = c.getColumnNames();
-            while(c.moveToNext()){
-                for(String ColumnName:cols){
-                    Log.i("info",ColumnName+":"+c.getString(c.getColumnIndex(ColumnName)));
-                }
-            }
-            c.close();
-            db.close();
+        mAuth.signInWithEmailAndPassword(editPhone.getText().toString(), editPwd.getText().toString())
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            // Sign in success, update UI with the signed-in user's information
+                            Log.d("login", "signInWithEmail:success");
+                            FirebaseUser user = mAuth.getCurrentUser();
+//                            updateUI(user);
+                        } else {
+                            // If sign in fails, display a message to the user.
+                            Log.w("TAG", "signInWithEmail:failure", task.getException());
+                            Toast.makeText(LoginActivity.this, "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
+//                            updateUI(null);
+                            // ...
+                        }
 
-            //将登陆用户信息存储到SharedPreferences中
-            SharedPreferences mySharedPreferences= getSharedPreferences("setting",Activity.MODE_PRIVATE); //实例化SharedPreferences对象
-            SharedPreferences.Editor editor = mySharedPreferences.edit();//实例化SharedPreferences.Editor对象
-            editor.putString("userID", editPhone.getText().toString()); //用putString的方法保存数据
-            editor.commit(); //提交当前数据
-
-            this.finish();
-        }
-        else{
-            Toast.makeText(this, "手机号或密码输入错误！", Toast.LENGTH_SHORT).show();
-        }
+                        // ...
+                    }
+                });
     }
+
+
 
     /**
      * Jump to the registration interface

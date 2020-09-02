@@ -20,9 +20,7 @@
         android:background="@drawable/rounded_edittext_states"
         android:hint="手机号"
         android:lines="1"
-        android:singleLine="true"
-        android:inputType="number"
-        android:maxLength="11"/>
+        android:singleLine="true" />
     <!-- input pwd -->
     <EditText
         android:id="@+id/editPwd"

@@ -1,13 +1,16 @@
 package com.hyl.accountbook;
 
+import com.google.firebase.FirebaseApp;
 import com.hyl.accountbook.CircleMenuLayout.OnMenuItemClickListener;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+//import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * @programName: MainActivity.java
