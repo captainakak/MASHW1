@@ -6,10 +6,8 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7aad1e5-6edf-48f7-a82a-eccf32f7e4e2" name="Default Changelist" comment="">
+    <list default="true" id="dbc0d0e0-9e35-4238-8f5c-6433d979118a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/hyl/accountbook/SpendingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/hyl/accountbook/SpendingActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +45,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../accountBook-master" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -195,19 +193,21 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="692" y="192" key="CommitChangelistDialog2/0.0.2194.1194@0.0.2194.1194" timestamp="1598994039356" />
-    <state x="722" y="169" key="FileChooserDialogImpl" timestamp="1598936631822">
-      <screen x="0" y="0" width="2194" height="1194" />
+    <state x="632" y="147" key="FileChooserDialogImpl" timestamp="1599001860411">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1598935165509" />
+    <state x="632" y="147" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599001860411" />
     <state x="722" y="169" key="FileChooserDialogImpl/0.0.2194.1194@0.0.2194.1194" timestamp="1598936631822" />
     <state x="810" y="313" key="MultipleFileMergeDialog" timestamp="1598992991286">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="810" y="313" key="MultipleFileMergeDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1598992991286" />
-    <state x="243" y="0" key="SettingsEditor" timestamp="1598936512461">
-      <screen x="0" y="0" width="2194" height="1194" />
+    <state x="213" y="0" key="SettingsEditor" timestamp="1599000766550">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1598935136177" />
+    <state x="213" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599000766550" />
     <state x="243" y="0" key="SettingsEditor/0.0.2194.1194@0.0.2194.1194" timestamp="1598936512461" />
     <state x="690" y="330" key="Vcs.Push.Dialog.v2" timestamp="1598994067881">
       <screen x="0" y="0" width="2194" height="1194" />
@@ -221,9 +221,10 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="906" y="514" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2194.1194@0.0.2194.1194" timestamp="1598993087910" />
-    <state x="792" y="195" width="610" height="804" key="find.popup" timestamp="1598994249558">
-      <screen x="0" y="0" width="2194" height="1194" />
+    <state x="693" y="170" width="647" height="701" key="find.popup" timestamp="1599001697307">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="693" y="170" width="647" height="701" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599001697307" />
     <state x="792" y="195" width="610" height="804" key="find.popup/0.0.2194.1194@0.0.2194.1194" timestamp="1598994249558" />
     <state x="760" y="264" width="672" height="678" key="search.everywhere.popup" timestamp="1598937963805">
       <screen x="0" y="0" width="2194" height="1194" />
