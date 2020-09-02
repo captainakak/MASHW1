@@ -2,15 +2,17 @@ package com.hyl.accountbook;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 //import android.support.v7.app.AppCompatActivity;
 
 import android.graphics.Typeface;
-import android.support.annotation.NonNull;
-import android.view.View;
-import android.widget.TextView;
+//import android.support.annotation.NonNull;
+
 
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 import com.ajts.androidmads.fontutils.FontUtils;
 
