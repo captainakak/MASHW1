@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">金金记较</string>
+    <string name="app_name">Ledger</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
@@ -11,9 +11,8 @@
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
 
-    <string name="aboutUs">关于我们</string>
-    <string name="jianjie">我们团队立志要开发一款简单的、好用的、人性化 的个人钱包管理APP软件；
-	            此软件能带您轻松管理自己的收入和花销，还有统计和警告功能，再也不用担心钱花超了。</string>
+    <string name="aboutUs">About Us</string>
+    <string name="jianjie">Team Member: Jingyi Li and Xinyi Zhang</string>
 
     <string name="login">Login</string>
     <string name="forgetPwd">Forget Password</string>
@@ -26,13 +25,13 @@
     <string name="category_report_tab">Category Report</string>
     
     <string name="setting">Settings</string>
-    <string name="setting_des">该功能正在开发中，敬请期待！</string>
+    <string name="setting_des">This feature is under development</string>
 
-    <string name="wish">Wish Wall</string>
-    <string name="wish_des">该功能正在开发中，敬请期待！</string>
+    <string name="wish">Wish List</string>
+    <string name="wish_des">This feature is under development</string>
 
     <string name="count">Statistics</string>
-    <string name="count_des">该功能正在开发中，敬请期待！</string>
+    <string name="count_des">This feature is under development</string>
 
     <!-- memo——MyDialog -->
     <string name="dialog_memo_title">Remarks</string>

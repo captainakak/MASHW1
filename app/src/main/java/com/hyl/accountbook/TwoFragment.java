@@ -53,7 +53,7 @@ public class TwoFragment extends Fragment {
      * 生成饼图
      */
     private void initPieChart(View v){
-        CategorySeries dataset = buildCategoryDataset("图文报表", values);
+        CategorySeries dataset = buildCategoryDataset("Graphic Report", values);
         DefaultRenderer renderer = buildCategoryRenderer(colors);
 
         ll_expense_piechart = (LinearLayout) v.findViewById(R.id.ll_expense_piechart);
@@ -74,10 +74,10 @@ public class TwoFragment extends Fragment {
      */
     protected CategorySeries buildCategoryDataset(String title, double[] values){
         CategorySeries series = new CategorySeries(title);
-        series.add("房租:"+values[0], values[0]/sumVal);
-        series.add("伙食费:"+values[1], values[1]/sumVal);
-        series.add("生活费:"+values[2], values[2]/sumVal);
-        series.add("其它:"+values[3], values[3]/sumVal);
+        series.add("Rent:"+values[0], values[0]/sumVal);
+        series.add("Food:"+values[1], values[1]/sumVal);
+        series.add("Living Expenses:"+values[2], values[2]/sumVal);
+        series.add("Other:"+values[3], values[3]/sumVal);
         return series;
     }
 

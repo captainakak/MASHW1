@@ -55,9 +55,9 @@ public class SpendingActivity extends AppCompatActivity implements View.OnClickL
 
     private AlertDialog alertDialog_AddRecord;//点击记一笔按钮时弹出提示框
 
-    String[] titles = new String[]{"明细", "类别报表"};
-    private static final String[] yearList = {pubFun.getTime("Y") + "年"};
-    private static final String[] monthList = { "01月", "02月", "03月", "04月", "05月", "06月", "07月", "08月", "09月", "10月", "11月", "12月" };
+    String[] titles = new String[]{"Details", "Category Report"};
+    private static final String[] yearList = {pubFun.getTime("Y") + "Year"};
+    private static final String[] monthList = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -220,9 +220,9 @@ public class SpendingActivity extends AppCompatActivity implements View.OnClickL
      * @param v
      */
     public void OnAddRecordClick(View v){
-        final String[] items = {"收入", "支出"};
+        final String[] items = {"Income", "Expenses"};
         AlertDialog.Builder alertBuilder = new AlertDialog.Builder(this);
-        alertBuilder.setTitle("请选择添加类别");
+        alertBuilder.setTitle("Please choose a category to add");
         alertBuilder.setItems(items, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {

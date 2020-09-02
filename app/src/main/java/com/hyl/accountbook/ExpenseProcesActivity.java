@@ -117,6 +117,9 @@ public class ExpenseProcesActivity extends AppCompatActivity {
     private Spinner note_spinner;
     private ArrayAdapter<String> note_adapter;
 
+    private TextView tv_income_money;
+    private TextView tv_outlay_money;
+
     private String txtBigCategory = "";
     private String txtSubCategory = "";
     private String txtAccount = "";
@@ -405,20 +408,20 @@ public class ExpenseProcesActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences= getSharedPreferences("setting",Activity.MODE_PRIVATE);
         String userID =sharedPreferences.getString("userID", "");
 
-        Log.i("info", "此次登录的用户是" + userID);
+        Log.i("info", "Log in user is: " + userID);
 
         if(userID.isEmpty()){
             new AlertDialog.Builder(this)
-                    .setTitle("提示")
-                    .setMessage("您还未登录，请点击确定按钮进行登录！")
-                    .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    .setTitle("Tip:")
+                    .setMessage("You are not logged in, please click the OK button to log in!")
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int whichButton) {
                             setResult(RESULT_OK);
                             Intent intent=new Intent(ExpenseProcesActivity.this,LoginActivity.class);
                             ExpenseProcesActivity.this.startActivity(intent);
                         }
                     })
-                    .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    .setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int whichButton) {
                             return;
                         }
@@ -445,6 +448,12 @@ public class ExpenseProcesActivity extends AppCompatActivity {
             values.put("cost", value);
             values.put("note", txtNote);
             values.put("makeDate",pubFun.format(calendar.getTime()));
+
+            // Need to be updated later, calculate the current balance
+//            tv_income_money = (TextView) findViewById(R.id.tv_income_money);
+//            tv_outlay_money = (TextView) findViewById(R.id.tv_outlay_money);
+//            tv_income_money.setText(DecimalFormat.getCurrencyInstance().format(Double.parseDouble(value)));
+
             long rowid = db.insert("basicCode_tb",null,values);
 
             //Test
@@ -460,7 +469,7 @@ public class ExpenseProcesActivity extends AppCompatActivity {
             }
             db.close();
 
-            Toast.makeText(this, "保存成功", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show();
         }
     }
 }

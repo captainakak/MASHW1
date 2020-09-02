@@ -66,6 +66,7 @@ public class LoginActivity extends AppCompatActivity {
      * login event
      * @param v
      */
+
     public void OnMyLoginClick(View v) {
         if (pubFun.isEmpty(editPhone.getText().toString()) || pubFun.isEmpty(editPwd.getText().toString())) {
             Toast.makeText(this, "手机号或密码不能为空！", Toast.LENGTH_SHORT).show();
@@ -93,6 +94,7 @@ public class LoginActivity extends AppCompatActivity {
                         // ...
                     }
                 });
+
     }
 
 
